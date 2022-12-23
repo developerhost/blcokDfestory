@@ -61,7 +61,18 @@ const init = () => {
   container.appendChild(heroDiv);
 
   ballDiv = document.createElement("div");
+  ballDiv.setAttribute("id", "imageBall");
   container.appendChild(ballDiv);
+  ballDiv.classList.add('ball');
+  const image = document.createElement('img');
+  image.src = "img/face.png";
+
+  image.width = 50;
+  image.height = 50;
+
+  document.getElementById("imageBall").appendChild(image);
+
+  // document..appendChild(image);
 
   let originalX = 0;
   let originalHeroLeft = 0;
